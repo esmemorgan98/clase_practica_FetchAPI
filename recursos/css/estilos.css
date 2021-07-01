@@ -25,9 +25,8 @@ nav ul {
 nav ul li a {
     text-decoration: none;
     font-family: 'Fredoka One', cursive;;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: bolder;
-    border: 2px solid #511281;
     padding: 10px 20px;
     cursor: pointer;
     transition: 0.8s;
@@ -161,13 +160,19 @@ footer {
 
 
 
-/*Medias Queries Dispositivos medianos*/
+/*MEDIAS QUERIER MEDIUM DEVICES*/
 @media only screen and (max-width:760px) {
    body {
-       background: black;
+       background: #0e0224;
    }
    #sliderImg img {
     width: 400px;
+}
+
+main #women p {
+    font-size: 35px;
+    color: #ae6ddf;
+    font-family: 'Fredoka One', cursive;
 }
 
 nav ul {
@@ -180,10 +185,12 @@ nav ul {
 .ov-btn-effect {
     color: #21094E;
 }
+
 nav ul li a {
     font-size: 15px;
     font-weight: bold;
 }
+
 nav ul li {
     list-style: none;
     margin: 20px;
@@ -203,14 +210,34 @@ nav ul li {
 
     
 }
-/*medias queries dispositivos pequeñas*/
+
+/*MEDIAS QUERIER SMALL DEVICES*/
 @media all and (max-width:600px){
     #sliderImg img {
         width: 300px;
     }
+    main section p {
+        font-size: 15px;
+    }
     header {
         margin-top: 10px;
     }
-   
+    
+    main #women p {
+        font-size: 20px;
+        color: #d1a5f3;
+        font-family: 'Fredoka One', cursive;
+    }
+}
 
+/*SLOGAN*/
+#women {
+    text-align: center;
+}
+
+#women p {
+    font-size: 50px;
+    padding: 40px 0px;
+    color: #791cc0;
+    font-family: 'Caveat', cursive;
 }
