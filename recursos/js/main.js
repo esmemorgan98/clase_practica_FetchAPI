@@ -1,6 +1,6 @@
 let tagTBody = document.querySelector("#listaPlanes tbody");
 
-
+let pUrl = 'https://my-json-server.typicode.com/esmemorgan98/clase_practica_FetchAPI/sports';
 
 
 fetch (pUrl,
