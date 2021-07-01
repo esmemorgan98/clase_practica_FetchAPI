@@ -1,0 +1,10 @@
+{
+    "sports":[
+        {"id": 1, "codigo": "FGSK03", "nombrePlan": "Figure Skating", "plazo": "6 months", "anualidad": "$35", "boton": "More Details"},
+        {"id": 2, "codigo": "GLF16", "nombrePlan": "Golf", "plazo": "1 year", "anualidad": "$32 (student)", "boton": "More Details"},
+        {"id": 3, "codigo": "RTGM08", "nombrePlan": "Rhytmic Gimnastics", "plazo": "1 year", "anualidad": "$32 (student)", "boton": "More Details"},
+        {"id": 4, "codigo": "SWM14", "nombrePlan": "Swimming", "plazo": "At day", "anualidad": "$1 - $3", "boton": "More Details"},
+        {"id": 5, "codigo": "TKW11", "nombrePlan": "Taekwondo", "plazo": "1 year", "anualidad": "$32 (student)", "boton": "More Details"},
+        {"id": 6, "codigo": "TNNS21", "nombrePlan": "Tennis", "plazo": "1 year", "anualidad": "$30 (student)", "boton": "More Details"}
+    ]
+}

@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Fredoka+One&family=Lobster&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-image: url('/recursos/images/back.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(3px);
+    color: white;
+}
+
+/*MENU 1*/
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-family: 'Fredoka One', cursive;;
+    font-size: 20px;
+    font-weight: bolder;
+    border: 2px solid #511281;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.8s;
+    position: relative;
+    overflow: hidden;
+}
+
+nav ul li a i {
+    margin: 2px;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 20px;
+    padding: 20px 0;
+}
+
+/*MENU 2 - hover*/
+.ov-btn-effect {
+    background: #4CA1A3; /* color de fondo */
+    color: #511281; /* color de fuente */
+    padding: 16px 20px;
+    border-radius: 3px; /* redondear bordes */
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.ov-btn-effect:hover {
+    color: #4CA1A3;/* color de fuente hover */
+}
+
+.ov-btn-effect::after {
+    content: "";
+    background: #511281; /* color de fondo hover */
+    position: absolute;
+    z-index: -1;
+    padding: 16px 20px;
+    display: block;
+    left: -20%;
+    right: -20%;
+    top: 0;
+    bottom: 0;
+    transform: skewX(-45deg) scale(0, 1);
+    transition: all 0.3s ease;
+}
+
+.ov-btn-effect:hover::after {
+    transition: all 0.3s ease-out;
+    transform: skewX(-45deg) scale(1, 1);
+}
+
+/*ACADEMY NAME*/
+
+#title {
+    background-color: #140431da;
+}
+
+#title h1 {
+    text-align: center;
+    font-family:  'Caveat', cursive;
+    font-size: 70px;
+    color: #A5E1AD;
+    font-weight: lighter;
+}
+
+#title h2 {
+    font-family: 'Fredoka One', cursive;
+    text-align: center;
+    font-size: 45px;
+    color: #4CA1A3;
+    font-weight: lighter;
+    margin-top: -20px;
+}
+
+#sliderImg {
+    text-align: center;
+    padding: 10px;
+}
+
+#sliderImg img {
+    border-radius: 5px;
+}
+
+
+/*TABLE*/
+
+.table {
+   max-width: 70%;
+   margin: auto;
+   padding: auto;
+   font-size: 14px;
+}
+
+button {
+    color: #A5E1AD;
+    border: none;
+    margin-left: -120px;
+}
+
+
+
+
+
+
+/*FOOTER*/
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:  #140431da;
+}
+
+/*ICONS*/ 
+.icons-effect a{
+    padding: 20px;
+    display: inline-flex;
+    text-decoration: none;
+    color: #A5E1AD;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.icons-effect a:hover {
+    color: #4CA1A3;
+    cursor: pointer;
+}
+
+
+
+
+/*Medias Queries Dispositivos medianos*/
+@media only screen and (max-width:760px) {
+   body {
+       background: black;
+   }
+   #sliderImg img {
+    width: 400px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.ov-btn-effect {
+    color: #21094E;
+}
+nav ul li a {
+    font-size: 15px;
+    font-weight: bold;
+}
+nav ul li {
+    list-style: none;
+    margin: 20px;
+    padding: 10px 0;
+}
+
+.iconos a {
+    font-size: 16px;
+}
+
+.table {
+    max-width: 90%;
+    margin: auto;
+    padding: auto;
+    font-size: 15px;
+ }
+
+    
+}
+/*medias queries dispositivos pequeñas*/
+@media all and (max-width:600px){
+    #sliderImg img {
+        width: 300px;
+    }
+    header {
+        margin-top: 10px;
+    }
+   
+
+}
